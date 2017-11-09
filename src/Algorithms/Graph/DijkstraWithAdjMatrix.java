@@ -8,11 +8,7 @@
  */
 package Algorithms.Graph;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
-public class Dijkstra {
+public class DijkstraWithAdjMatrix {
 
     public int minDistance(int[] dist, boolean[] spt){
 
@@ -71,7 +67,7 @@ public class Dijkstra {
                 {8, 11, 0, 0, 0, 0, 1, 0, 7},
                 {0, 0, 2, 0, 0, 0, 6, 7, 0}
         };
-        Dijkstra dijkstra = new Dijkstra();
+        DijkstraWithAdjMatrix dijkstra = new DijkstraWithAdjMatrix();
         dijkstra.shortestPath(graph,0,9);
     }
 }
